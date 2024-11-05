@@ -1,8 +1,7 @@
 class Printer:  
 
 
-    def __init__(self, name: str = "Printer", speed: int = 30, price: float = 3700.00,\
-version: str = "Default", capacity: int = 2):
+    def __init__(self, name: str = "Printer", speed: int = 30, price: float = 3700.00, version: str = "Default", capacity: int = 2):
         self.__name = name
         self.__speed = speed 
         self.__price = price  
@@ -19,12 +18,10 @@ version: str = "Default", capacity: int = 2):
         return self.__price
 
     def __str__(self):
-        return f"Printer(Name: {self.__name}, Speed: {self.__speed}\
- Price: {self.__price}, Version: {self.version}, Capacity: {self.capacity})"
+        return f"Printer(Name: {self.__name}, Speed: {self.__speed}, Price: {self.__price}, Version: {self.version}, Capacity: {self.capacity})"
 
     def __repr__(self):
-         return f'Printer("{self.__name}", {self.__speed}, {self.__price},\
- "{self.version}", {self.capacity})'
+         return f'Printer("{self.__name}", {self.__speed}, {self.__price}, "{self.version}", {self.capacity})'
 
     def __del__ (self):
         print("Deleting an object")
